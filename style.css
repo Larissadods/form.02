@@ -1,0 +1,52 @@
+::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(-120deg, rgb(86, 0, 121), black);
+}
+
+ body, textarea {
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    width: 700px;
+}
+
+.titulo {
+    padding: 24px 32px;
+    font-size: 24px;
+    border-bottom: thin solid rgb(170, 170, 170);
+}
+
+.form-box form {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 32px;
+}
+
+.form-box input, .form-box textarea {
+    width: calc(50% - 8px);
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid rgb(170, 170, 170);
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
